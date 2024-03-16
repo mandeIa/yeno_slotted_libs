@@ -20,7 +20,7 @@ local settings = {
     drag_time = 0.3;
 };
 
-local drawing = loadstring(game:HttpGet("https://raw.githubusercontent.com/nwiugtqniugbqwgqug/cdn/main/drawing.lua"))();
+local drawing = loadstring(game:HttpGet("https://raw.githubusercontent.com/mandeIa/yeno_slotted_libs/main/drawing.lua"))();
 local tween = loadstring(game:HttpGet("https://raw.githubusercontent.com/nwiugtqniugbqwgqug/cdn/main/tween.lua"))() -- shhhh
 local signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/nwiugtqniugbqwgqug/cdn/main/signal.lua'))()
 
