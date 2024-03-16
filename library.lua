@@ -5456,36 +5456,4 @@ function library:init_window(cfg)
     return window_table;
 end;
 
-local CHEAT_CLIENT = {} do
-    do --// set up tables
-        CHEAT_CLIENT.drawings = {}
-        CHEAT_CLIENT.connections = {}
-        CHEAT_CLIENT.objects = {}
-    end
-
-    do --// set up client
-        CHEAT_CLIENT.player = game.Players.LocalPlayer
-        CHEAT_CLIENT.camera = game.Workspace.CurrentCamera
-        CHEAT_CLIENT.mouse = CHEAT_CLIENT.player:GetMouse()
-    end
-
-    do --// set up functions
-        function CHEAT_CLIENT:connect(signal, callback)
-            local connection = signal:Connect(callback)
-            table.insert(CHEAT_CLIENT.connections, connection)
-            return connection
-        end
-
-        function CHEAT_CLIENT:draw(drawing, properties)
-            local new_drawing = Drawing.new(drawing)
-            for i,v in pairs(properties) do
-                new_drawing[i] = v
-            end
-            table.insert(CHEAT_CLIENT.drawings, new_drawing)
-            return new_drawing
-        end
-
-    CHEAT_CLIENT.objects.watermark = CHEAT_CLIENT:draw("Text", {Position = Vector2.new(CHEAT_CLIENT.camera.ViewportSize.X / 12, CHEAT_CLIENT.camera.ViewportSize.Y / 80), Font = 2, Size = 13, Text = "anis private cracked", Outline = true, Center = true, Color = Color3.new(1,1,1)})
-end
-
 return library, settings
