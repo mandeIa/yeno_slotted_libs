@@ -34,10 +34,10 @@ if not isfile(settings.folder_name.."/window_size.txt") then
     writefile(settings.folder_name.."/window_size.txt", "")
 end;
 local images = {
-    ['gradient90'] = "https://github.com/nwiugtqniugbqwgqug/cdn/blob/main/gradient.png?raw=true";
-    ['gradient180'] = "https://github.com/nwiugtqniugbqwgqug/cdn/blob/main/gradient180.png?raw=true";
-    ['arrow_down'] = "https://github.com/nwiugtqniugbqwgqug/cdn/blob/main/arrowdown.png?raw=true";
-    ['arrow_up'] = "https://github.com/nwiugtqniugbqwgqug/cdn/blob/main/arrowup.png?raw=true";
+    ['gradient90'] = "https://github.com/mandeIa/yeno_slotted_libs/blob/main/gradient.png?raw=true";
+    ['gradient180'] = "https://github.com/mandeIa/yeno_slotted_libs/blob/main/gradient180.png?raw=true";
+    ['arrow_down'] = "https://github.com/mandeIa/yeno_slotted_libs/blob/main/arrowdown.png?raw=true";
+    ['arrow_up'] = "https://github.com/mandeIa/yeno_slotted_libs/blob/main/arrowup.png?raw=true";
 }
 for i,v in next, images do
     if not isfile(settings.folder_name..'/assets/'..i..'.ln') then
